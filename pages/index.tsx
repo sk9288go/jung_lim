@@ -3,8 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Login_page.module.css'
 
-// LoginModal.tsx
-import  LoginModal  from "../component/LoginModal";
+// LoginModal
+import  LoginModal  from "../component/auth/LoginModal";
+
 
 const Login: NextPage = () => {
   return (
