@@ -15,8 +15,12 @@ const LoginModal = () => (
 			<Image src={logo} alt="" />
 		</div>
 		<div className={styles.input_wrap}>
-			<input type="text" />
-			<input type="password" name="" id="" />
+			<input type="text" placeholder='Enter your email' />
+			<input type="password" name="" id="" placeholder='Enter your password' />
+		</div>
+		<div className={styles.btn_wrap}>
+			<button className={styles.White_btn}>SIGN UP</button>
+			<button className={styles.Green_btn}>LOGIN</button>
 		</div>
 	</div>
 );
