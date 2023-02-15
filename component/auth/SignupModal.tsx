@@ -12,30 +12,35 @@ const SignupModal = () => (
 		</div>
 
 		<div className={styles.input_list}>
-			<div className={styles.input_wrap}>
+			<div className={styles.input_box}>
 				<p>이름</p>
-				<div className={styles.input_box}>
-					<input type="text" placeholder='이메일' />
-					@
-					<input type="text" placeholder='Junglim.com' />
+				<div className={styles.input_wrap}>
+					<input type="text" placeholder='First Name'/>
+					<input type="text" placeholder='Last Name'/>
 				</div>
-				
 			</div>
-			<div className={styles.input_wrap}>
-				<p>비밀번호</p>
-				<input type="password" placeholder='비밀번호' />
+			<div className={styles.input_box}>
+				<p>Email</p>
+				<div className={styles.input_wrap}>
+					<input type="text" placeholder='계정'/>
+					<p>@ Junglim.com</p>
+				</div>
 			</div>
-			<div className={styles.input_wrap}>
-				<p>비밀번호 확인</p>
-				<input type="password" placeholder='비밀번호 확인' />
-			</div>
-			<div className={styles.input_wrap}>
+			<div className={styles.input_box}>
 				<p>직급</p>
-				<input type="text" placeholder='직급' />
+				<input type="text" placeholder='직급'/>
 			</div>
-			<div className={styles.input_wrap}>
+			<div className={styles.input_box}>
 				<p>부서</p>
-				<input type="text" placeholder='부서' />
+				<input type="text" placeholder='부서'/>
+			</div>
+			<div className={styles.input_box}>
+				<p>비밀번호</p>
+				<input type="password" placeholder='비밀번호'/>
+			</div>
+			<div className={styles.input_box}>
+				<p>비밀번호 확인</p>
+				<input type="password" placeholder='비밀번호 확인'/>
 			</div>
 		</div>
 

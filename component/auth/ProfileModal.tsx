@@ -34,15 +34,15 @@ const ProfileModal = () => (
 			</div>
 			<div className={styles.input_box}>
 				<p>변경 전 비밀번호</p>
-				<input type="text" placeholder='변경 전 비밀번호'/>
+				<input type="password" placeholder='변경 전 비밀번호'/>
 			</div>
 			<div className={styles.input_box}>
 				<p>변경 후 비밀번호</p>
-				<input type="text" placeholder='변경 후 비밀번호'/>
+				<input type="password" placeholder='변경 후 비밀번호'/>
 			</div>
 			<div className={styles.input_box}>
 				<p>변경 후 비밀번호 확인</p>
-				<input type="text" placeholder='변경 후 비밀번호 확인'/>
+				<input type="password" placeholder='변경 후 비밀번호 확인'/>
 			</div>
 		</div>
 

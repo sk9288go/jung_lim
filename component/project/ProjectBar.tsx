@@ -1,0 +1,38 @@
+import Link from 'next/link';
+
+import styles from "../project/ProjectBar.module.css";
+import classNames from 'classnames';
+
+import Image from 'next/image'
+
+import { useRouter } from 'next/router'
+
+const ProjectBar = () => {
+	const router = useRouter()
+
+	return(
+		<div className={classNames({[styles.ProjectBar_wrap]: true, [styles.open]: false})}>
+			<div className={styles.ProjectBar_head}>
+				<i className='xi-file-o'></i>
+				<p>My Project</p>
+				<button><i className='xi-arrow-left'></i></button>
+			</div>
+			<div className={styles.content_wrap}>
+				<input type="text" placeholder='Title (30자 이내)' />
+				<textarea name="" id="" placeholder='Note (500자 이내)'></textarea>
+			</div>
+
+			<div className={styles.close_bar}>
+				<div className={styles.close_bar_head}>
+					<i className='xi-file-o'></i>
+				</div>
+				<div className={styles.close_bar_body}>
+					<p>My Project</p>
+					<button><i className='xi-angle-right'></i></button>
+				</div>
+			</div>
+		</div>
+	)
+}
+
+export default ProjectBar;
