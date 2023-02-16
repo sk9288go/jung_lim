@@ -7,6 +7,7 @@ import styles from '../styles/Project_page.module.css'
 import Header from "../component/Header";
 
 import ProjectBar from "../component/project/ProjectBar";
+import ImageBar from "../component/ImageBar/ImageBar";
 
 const Project: NextPage = () => {
 	return (
@@ -15,6 +16,7 @@ const Project: NextPage = () => {
 
 			<div className={styles.bar_wrap}>
 				<ProjectBar></ProjectBar>
+				<ImageBar></ImageBar>
 			</div>
 		</div>
 	)
