@@ -24,3 +24,20 @@ body{
 ::-webkit-scrollbar {
 	display: none;
 }
+
+/* Pre_set */
+.ant-checkbox-group.css-dev-only-do-not-override-diro6f { width: min-content; display: flex; gap: 10px; }
+
+.ant-checkbox { display: none; }
+
+.ant-row { flex-flow: unset; }
+
+.ant-checkbox-wrapper { display: flex; align-items: center; padding: 0 20px; height: 27px; font-size: 14px; background: #D3D3D3; border: 0.4px solid #838383; border-radius: 11px; }
+.ant-checkbox-wrapper span { padding: unset; width: min-content; white-space: nowrap; }
+.ant-checkbox-wrapper::after { display: none; }
+.ant-checkbox-wrapper.ant-checkbox-wrapper-checked { background: #6D6D6D; border: 0.4px solid #838383; }
+.ant-checkbox-wrapper.ant-checkbox-wrapper-checked span { color: #fff; }
+
+.indiana-scroll-container--hide-scrollbars { width: 100%; }
+
+

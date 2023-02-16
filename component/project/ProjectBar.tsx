@@ -25,6 +25,7 @@ const ProjectBar = () => {
 				<div className={styles.content_wrap}>
 					<input type="text" placeholder='Title (30자 이내)' />
 					<textarea name="" id="" placeholder='Note (500자 이내)'></textarea>
+					<button className={styles.save_btn}><i className='xi-save'></i></button>
 				</div>
 			</div>
 

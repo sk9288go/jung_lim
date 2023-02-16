@@ -23,7 +23,7 @@ const SignupModal = () => (
 				<p>Email</p>
 				<div className={styles.input_wrap}>
 					<input type="text" placeholder='계정'/>
-					<p>@ Junglim.com</p>
+					<p>@Junglim.com</p>
 				</div>
 			</div>
 			<div className={styles.input_box}>

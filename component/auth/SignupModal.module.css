@@ -11,8 +11,8 @@
 .input_box input::placeholder { font-size: 14px; color: #8d8d8d; }
 
 .input_wrap { display: flex;  gap: 10px; width: 284px; align-items: center; }
-.input_wrap input:nth-child(1) { width: 150px; }
-.input_wrap input:nth-child(2) { width: calc(100% - 160px); }
+.input_wrap input:nth-child(1) { width: 170px; }
+.input_wrap input:nth-child(2) { width: calc(100% - 180px); }
 .input_wrap p { font-size: 14px; color: rgba(44, 44, 44, 0.5); }
 
 .btn_wrap { display: flex; gap: 16px; width: 480px; justify-content: flex-end; }

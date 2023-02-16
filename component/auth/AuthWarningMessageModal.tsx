@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from "../auth/AuthWarningMessageModal.module.css";
 
 import Image from 'next/image'
-import logo from '../../public/images/logo.png'
+import logo from '../../public/images/Error Logo.png'
 
 
 const AuthWarningMessageModal = () => {

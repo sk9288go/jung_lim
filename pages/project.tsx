@@ -7,7 +7,7 @@ import styles from '../styles/Project_page.module.css'
 import Header from "../component/Header";
 
 import ProjectBar from "../component/project/ProjectBar";
-import ImageBar from "../component/ImageBar/ImageBar";
+import ImageBar from "../component/BrowserBar/BrowserBar";
 
 const Project: NextPage = () => {
 	return (
