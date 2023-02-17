@@ -16,7 +16,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 const BrowserBar = () => {
 	const router = useRouter()
 
-	const [bar_close, setBar_close] = useState(false);
+	const [bar_close, setBar_close] = useState(true);
 
 	const [drawer_1 , setDrawer_1] = useState(true);
 	const [drawer_2 , setDrawer_2] = useState(true);
@@ -346,15 +346,15 @@ const BrowserBar = () => {
 							<div className={styles.drawer_content}>
 								<ul className={styles.size_list}>
 									<li>
-										<input type="radio" name="a" id="size1" />
+										<input type="radio" name="size" id="size1" />
 										<label htmlFor="size1">256 x 256</label>
 									</li>
 									<li>
-										<input type="radio" name="a" id="size2" />
+										<input type="radio" name="size" id="size2" />
 										<label htmlFor="size2">512 x 512</label>
 									</li>
 									<li>
-										<input type="radio" name="a" id="size3" />
+										<input type="radio" name="size" id="size3" />
 										<label htmlFor="size3">1024 x 1024</label>
 									</li>
 								</ul>

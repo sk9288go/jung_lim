@@ -8,6 +8,8 @@ import Header from "../component/Header";
 
 import ProjectBar from "../component/project/ProjectBar";
 import ImageBar from "../component/BrowserBar/BrowserBar";
+import TreeCanvas from "../component/Tree/TreeCanvas";
+
 
 const Project: NextPage = () => {
 	return (
@@ -18,6 +20,8 @@ const Project: NextPage = () => {
 				<ProjectBar></ProjectBar>
 				<ImageBar></ImageBar>
 			</div>
+
+			<TreeCanvas></TreeCanvas>
 		</div>
 	)
 }

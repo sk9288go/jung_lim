@@ -38,6 +38,6 @@ body{
 .ant-checkbox-wrapper.ant-checkbox-wrapper-checked { background: #6D6D6D; border: 0.4px solid #838383; }
 .ant-checkbox-wrapper.ant-checkbox-wrapper-checked span { color: #fff; }
 
-.indiana-scroll-container--hide-scrollbars { width: 100%; }
+.indiana-scroll-container--hide-scrollbars { width: 100%; height: 100%; }
 
 
