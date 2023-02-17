@@ -1,7 +1,6 @@
 .TreeCanvas_wrap { width: 100vw; height: 100vh; }
 
-.TreeCanvas_box { padding: 200px 640px; width: 100%; min-width: calc(100vw + 600px); min-height: 100vh; display: flex; align-items: center; }
-
+.TreeCanvas_box { padding: 80px 640px; width: 100%; min-width: calc(100vw + 600px); min-height: 100vh; display: flex; align-items: center; }
 
 .tree_img_list { display: flex; flex-direction: column; gap: 72px; align-items: flex-start; }
 
