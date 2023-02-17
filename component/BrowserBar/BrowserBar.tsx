@@ -16,7 +16,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 const BrowserBar = () => {
 	const router = useRouter()
 
-	const [bar_close, setBar_close] = useState(true);
+	const [bar_close, setBar_close] = useState(false);
 
 	const [drawer_1 , setDrawer_1] = useState(true);
 	const [drawer_2 , setDrawer_2] = useState(true);

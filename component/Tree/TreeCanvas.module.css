@@ -5,27 +5,7 @@
 
 .tree_img_list { display: flex; flex-direction: column; gap: 72px; align-items: flex-start; }
 
-.tree_img_list li { display: flex; align-items: center; gap: 160px; position: relative; padding: 20px; background-color: #0000001a; }
-/* .tree_img_list li:nth-child(1) { background-color: aqua; }
-.tree_img_list li:nth-child(2) { background-color: antiquewhite; }
-.tree_img_list li:nth-child(3) { background-color: blue; }
-.tree_img_list li:nth-child(4) { background-color: sandybrown; }
-.tree_img_list li:nth-child(5) { background-color: darkcyan; }
-.tree_img_list li:nth-child(6) { background-color: blue; }
-.tree_img_list li:nth-child(7) { background-color: fuchsia; }
-.tree_img_list li:nth-child(8) { background-color: firebrick; }
-.tree_img_list li:nth-child(9) { background-color: aquamarine; } */
-
-
-
-
-
-
-
-/* .tree_img_list li::before { width: 100px; height: 4px; background-color: red; position: absolute; top: 50%; left: 200px; content: ''; }
-.tree_img_list li:first-child::after { width: 4px; height: 100px; background-color: red; position: absolute; top: 50%; left: -62px; content: ''; }
-.tree_img_list li:last-child::after { width: 4px; height: 100px; background-color: red; position: absolute; top: 50%; left: -62px; content: ''; } */
-
+.tree_img_list li { display: flex; align-items: center; gap: 100px; position: relative; padding: 20px; background-color: #0000001A; border-radius: 16px; }
 
 
 .tree_img_list li .tree_box { width: 256px; height: 281px; background-color: red; position: relative; }

@@ -1,6 +1,20 @@
 /* @import url('https://fonts.cdnfonts.com/css/inter'); */
 
-* {font-family: 'Inter', 'Open Sans' ,sans-serif; box-sizing:border-box; margin:0; padding:0; font-weight: normal;}
+@font-face {
+    font-family: 'KimjungchulGothic';
+    src: url('../public/static/fonts/KimjungchulGothic-Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulGothic';
+    src: url('../public/static/fonts/KimjungchulGothic-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {font-family: 'KimjungchulGothic', 'Open Sans' ,sans-serif; box-sizing:border-box; margin:0; padding:0; font-weight: normal;}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, em, img, strong, b, i, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, menu, nav, section, video, a {border:0; outline:0; font-size:100%; color:#313131; line-height:normal;}
 body {line-height:normal; background-color: #B4B4B4;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
@@ -24,6 +38,7 @@ body{
 ::-webkit-scrollbar {
 	display: none;
 }
+
 
 /* Pre_set */
 .ant-checkbox-group.css-dev-only-do-not-override-diro6f { width: min-content; display: flex; gap: 10px; }

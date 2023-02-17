@@ -12,7 +12,7 @@ import { useRouter } from 'next/router'
 const ProjectBar = () => {
 	const router = useRouter()
 
-	const [bar_close, setBar_close] = useState(true)
+	const [bar_close, setBar_close] = useState(false)
 
 	return(
 		<div className={classNames({[styles.ProjectBar_wrap]: true, [styles.close]: bar_close})}>

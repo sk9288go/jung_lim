@@ -7,9 +7,10 @@ import classNames from 'classnames';
 
 import Image from 'next/image'
 
-import { useRouter } from 'next/router'
-
 import ScrollContainer from 'react-indiana-drag-scroll'
+
+import TreeNode from "./TreeNode";
+
 
 const TreeCanvas = () => {
 
@@ -19,45 +20,56 @@ const TreeCanvas = () => {
 				<div className={styles.TreeCanvas_box}>
 					<ul className={classNames({[styles.tree_img_list]: true, [styles.close]: true})}>
 						<li>
-							<div className={styles.tree_box}>asad</div>
+							<TreeNode></TreeNode>
 							<ul  className={styles.tree_img_list}>
 								<li>
-									<div className={styles.tree_box}>asad</div>
-								</li>
-								<li>
-									<div className={styles.tree_box}>asad</div>
+									<TreeNode></TreeNode>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<div className={styles.tree_box}>asad</div>
+							<TreeNode></TreeNode>
 							<ul  className={styles.tree_img_list}>
 								<li>
-									<div className={styles.tree_box}>asad</div>
+									<TreeNode></TreeNode>
 									<ul  className={styles.tree_img_list}>
 										<li>
-											<div className={styles.tree_box}>asad</div>
+											<TreeNode></TreeNode>
 										</li>
 										<li>
-											<div className={styles.tree_box}>asad</div>
+											<TreeNode></TreeNode>
 											<ul  className={styles.tree_img_list}>
 												<li>
-													<div className={styles.tree_box}>asad</div>
+													<TreeNode></TreeNode>
+												</li>
+												<li>
+													<TreeNode></TreeNode>
+												</li>
+												<li>
+													<TreeNode></TreeNode>
+													<ul  className={styles.tree_img_list}>
+														<li>
+															<TreeNode></TreeNode>
+														</li>
+														<li>
+															<TreeNode></TreeNode>
+														</li>
+													</ul>
 												</li>
 											</ul>
 										</li>
 										<li>
-											<div className={styles.tree_box}>asad</div>
+											<TreeNode></TreeNode>
 											<ul  className={styles.tree_img_list}>
 												<li>
-													<div className={styles.tree_box}>asad</div>
+													<TreeNode></TreeNode>
 												</li>
 											</ul>
 										</li>
 									</ul>
 								</li>
 								<li>
-									<div className={styles.tree_box}>asad</div>
+									<TreeNode></TreeNode>
 								</li>
 							</ul>
 						</li>
