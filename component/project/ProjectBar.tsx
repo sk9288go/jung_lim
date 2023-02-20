@@ -23,8 +23,8 @@ const ProjectBar = () => {
 					<button onClick={()=>{setBar_close(true)}}><i className='xi-arrow-left'></i></button>
 				</div>
 				<div className={styles.content_wrap}>
-					<input type="text" placeholder='Title (30자 이내)' />
-					<textarea name="" id="" placeholder='Note (500자 이내)'></textarea>
+					<input type="text" placeholder='Title (30자 이내)' maxLength={30} />
+					<textarea name="" id="" placeholder='Note (500자 이내)' maxLength={500} ></textarea>
 					<button className={styles.save_btn}><i className='xi-save'></i></button>
 				</div>
 			</div>

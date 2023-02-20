@@ -5,7 +5,7 @@
 .lofo_wrap img { width: 100%; height: 100%; }
 
 .version_wrap { position: relative; }
-.version_wrap h1 { font-size: 20px; letter-spacing: 2px; color: #000; line-height: 32px; font-weight: bold; }
+.version_wrap h1 { font-size: 20px; letter-spacing: 2px; color: #000; line-height: 32px; }
 .version_wrap .Explanation_box { display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); width: 314px; padding: 8px; background-color: #d9d9d9; border-radius: 13px; }
 .version_wrap .Explanation_box p { font-size: 14px; line-height: 1.5; color: #000; }
 .version_wrap .Explanation_box p span { font-weight: bold; }

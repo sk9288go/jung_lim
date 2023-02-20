@@ -12,15 +12,19 @@ import Rectangle from '../../public/images/Rectangle.png'
 
 
 
-const TreeNode = () => {
+const TreeNode = (props: any) => {
 
-	const [img_box_close, setTmg_box_close] = useState(false)
+	console.log(props.name);
+
+	const [img_box_close, setTmg_box_close] = useState(false);
 
 	const [big_img , setBig_img] = useState(false);
 
+	const [TreeNode_Choice, setTreeNode_Choice] = useState(false);
+
 	return(
 		<div className={styles.TreeNode_wrap}>
-			<div className={styles.TreeNode_box}>
+			<div className={classNames({[styles.TreeNode_box]: true, [styles.Choice]: TreeNode_Choice})}>
 
 				<div className={styles.TreeNode_btn_wrap}>
 					<span className={styles.num}>1</span>
@@ -32,7 +36,7 @@ const TreeNode = () => {
 				</div>
 
 				<div className={classNames({[styles.img_box]: true, [styles.close]: img_box_close})}>
-					<div className={styles.img_wrap}>
+					<div className={styles.img_wrap} onClick={()=>{setTreeNode_Choice(!TreeNode_Choice)}}>
 						<Image src={Rectangle} alt="" />
 					</div>
 
@@ -47,9 +51,14 @@ const TreeNode = () => {
 
 			<div 
 				className={classNames({[styles.big_img_wrap]: true, [styles.open]: big_img})}
-				onClick={()=>{setBig_img(false)}}
 			>
-				<Image src={Rectangle} alt="" />
+				<div className={styles.img_wrap}>
+					<div className={styles.btn_wrap}>
+						<button><i className='xi-download' ></i></button>
+						<button onClick={()=>{setBig_img(false)}}><i className='xi-close'></i></button>
+					</div>
+					<Image src={Rectangle} alt="" />
+				</div>
 			</div>
 		</div>
 	)

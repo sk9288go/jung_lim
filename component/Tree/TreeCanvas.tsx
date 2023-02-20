@@ -20,7 +20,7 @@ const TreeCanvas = () => {
 				<div className={styles.TreeCanvas_box}>
 					<ul className={classNames({[styles.tree_img_list]: true, [styles.close]: true})}>
 						<li>
-							<TreeNode></TreeNode>
+							<TreeNode name="asd"></TreeNode>
 							<ul  className={styles.tree_img_list}>
 								<li>
 									<TreeNode></TreeNode>
@@ -35,36 +35,10 @@ const TreeCanvas = () => {
 									<ul  className={styles.tree_img_list}>
 										<li>
 											<TreeNode></TreeNode>
+											
 										</li>
 										<li>
 											<TreeNode></TreeNode>
-											<ul  className={styles.tree_img_list}>
-												<li>
-													<TreeNode></TreeNode>
-												</li>
-												<li>
-													<TreeNode></TreeNode>
-												</li>
-												<li>
-													<TreeNode></TreeNode>
-													<ul  className={styles.tree_img_list}>
-														<li>
-															<TreeNode></TreeNode>
-														</li>
-														<li>
-															<TreeNode></TreeNode>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<TreeNode></TreeNode>
-											<ul  className={styles.tree_img_list}>
-												<li>
-													<TreeNode></TreeNode>
-												</li>
-											</ul>
 										</li>
 									</ul>
 								</li>

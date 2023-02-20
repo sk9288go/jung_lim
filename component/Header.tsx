@@ -24,7 +24,7 @@ const Header = () => {
 				<h1>AI-IMAGE GENERATOR V.1</h1>
 				<div className={styles.Explanation_box}>
 					<p>
-						JL-AI 에 오신 것을 환영합니다. <br />
+						JL-AI에 오신 것을 환영합니다. <br />
 						JL-AI는 정림건축의 <span>이미지 데이터</span>를 토대로 <br /> 
 						<span>Diffusion algorithm을 활용해 건축 AI 이미지</span>를
 						생성하는 웹 서비스입니다. <br />
