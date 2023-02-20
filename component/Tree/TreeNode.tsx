@@ -14,7 +14,7 @@ import Rectangle from '../../public/images/Rectangle.png'
 
 const TreeNode = (props: any) => {
 
-	console.log(props.name);
+	// console.log(props.name);
 
 	const [img_box_close, setTmg_box_close] = useState(false);
 

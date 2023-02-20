@@ -4,10 +4,14 @@
 
 .tree_img_list { display: flex; flex-direction: column; gap: 72px; align-items: flex-start; }
 
-.tree_img_list li { display: flex; align-items: center; gap: 100px; position: relative; padding: 20px; background-color: #0000001A; border-radius: 16px; }
+/* .tree_img_list li { display: flex; align-items: center; gap: 100px; position: relative; padding: 20px; background-color: #0000001A; border-radius: 16px; } */
+.tree_img_list li { display: flex; gap: 100px; position: relative;  
+	/* background-color: #0000001A; */
+	border-radius: 16px; }
+.tree_img_list li::before { width: 6px; height: calc(100% - 300px); background-color: #838383; content: ''; position: absolute; left: 320px; top: 50%; transform: translateY(-50%); }
 
 
-.tree_img_list li .tree_box { width: 256px; height: 281px; background-color: red; position: relative; }
+/* .tree_img_list li .tree_box { width: 256px; height: 281px; background-color: red; position: relative; } */
 
 
 
