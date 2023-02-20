@@ -24,8 +24,7 @@ const TreeNode = (props: any) => {
 
 	return(
 		<div className={styles.TreeNode_wrap}>
-			<div className={classNames({[styles.TreeNode_box]: true, [styles.Choice]: TreeNode_Choice})}>
-
+			<div className={classNames({[styles.TreeNode_box]: true, [styles.Choice]: TreeNode_Choice, [styles.close]: img_box_close})}>
 				<div className={styles.TreeNode_btn_wrap}>
 					<span className={styles.num}>1</span>
 					<div className={styles.btn_wrap}>

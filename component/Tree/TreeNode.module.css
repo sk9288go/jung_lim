@@ -7,6 +7,7 @@
 
 .TreeNode_box { padding: 8px; display: flex; flex-direction: column; position: relative; width: 272px; height: 297px; }
 .TreeNode_box.Choice { background-color: #6cbe2e; }
+.TreeNode_box.Choice.close { background-color: transparent; }
 
 .TreeNode_box .TreeNode_btn_wrap { display: flex; align-items: center; justify-content: space-between; position: absolute; top: 0; left: 0; width: 109px; height: 32px; border: solid 0.5px #333; background-color: #b4b4b4; border-radius: 0 0 8px 0; padding: 0 5px 0 9px; z-index: 1; }
 .TreeNode_box .TreeNode_btn_wrap .btn_wrap { display: flex; gap: 5px; }
@@ -26,8 +27,8 @@
 .big_img_wrap { width: 100vw; height: 100vh; position: fixed; left: 0; top: 0; background-color: #00000080; display: none; justify-content: center; align-items: center; display: none; z-index: 999; }
 .big_img_wrap .img_wrap { width: calc(100% - 64px); height: calc(100% - 64px); max-width: 768px; max-height: 768px; position: relative; }
 .big_img_wrap .img_wrap img { width: 100%; height: 100%; }
-.big_img_wrap .img_wrap .btn_wrap { display: flex; justify-content: flex-end; gap: 16px; position: absolute; top: 16px; right: 16px; }
-.big_img_wrap .img_wrap .btn_wrap i { font-size: 30px; }
+.big_img_wrap .img_wrap .btn_wrap { display: flex; justify-content: flex-end; gap: 16px; position: absolute; bottom: calc(100% + 4px); right: 16px; }
+.big_img_wrap .img_wrap .btn_wrap i { font-size: 30px; color: #fff; }
 
 
 
