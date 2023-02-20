@@ -13,7 +13,6 @@ import TreeNode from "./TreeNode";
 
 
 const TreeCanvas = () => {
-
 	return(
 		<div className={styles.TreeCanvas_wrap}>
 			<ScrollContainer className="scroll-container">
@@ -35,7 +34,20 @@ const TreeCanvas = () => {
 									<ul  className={styles.tree_img_list}>
 										<li>
 											<TreeNode></TreeNode>
-											
+											<ul  className={styles.tree_img_list}>
+												<li>
+													<TreeNode></TreeNode>
+												</li>
+												<li>
+													<TreeNode></TreeNode>
+												</li>
+												<li>
+													<TreeNode></TreeNode>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<TreeNode></TreeNode>
 										</li>
 										<li>
 											<TreeNode></TreeNode>
