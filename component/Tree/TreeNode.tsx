@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 
@@ -14,9 +14,13 @@ import Rectangle from '../../public/images/Rectangle.png'
 
 const TreeNode = (props: any) => {
 
-	// console.log(props.name);
+	console.log(props.img_open);
 
-	const [img_box_close, setTmg_box_close] = useState(false);
+	const [img_box_close, setImg_box_close] = useState(false);
+
+	// useEffect(()=>{
+	// 	setImg_box_close(props.img_open);
+	// },[img_box_close])
 
 	const [big_img , setBig_img] = useState(false);
 
@@ -28,7 +32,7 @@ const TreeNode = (props: any) => {
 				<div className={styles.TreeNode_btn_wrap}>
 					<span className={styles.num}>1</span>
 					<div className={styles.btn_wrap}>
-						<button onClick={()=>{setTmg_box_close(!img_box_close)}}><i className='xi-angle-left'></i></button>
+						<button onClick={()=>{setImg_box_close(!img_box_close)}}><i className='xi-angle-left'></i></button>
 						<button onClick={()=>{setBig_img(true)}}><i className='xi-zoom-in'></i></button>
 						<button><i className='xi-trash-o'></i></button>
 					</div>

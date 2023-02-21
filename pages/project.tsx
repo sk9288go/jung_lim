@@ -9,7 +9,7 @@ import Header from "../component/Header";
 import ProjectBar from "../component/project/ProjectBar";
 import ImageBar from "../component/BrowserBar/BrowserBar";
 import TreeCanvas from "../component/Tree/TreeCanvas";
-
+import TreeCanvas2 from "../component/Tree/TreeCanvas2";
 
 const Project: NextPage = () => {
 	return (
