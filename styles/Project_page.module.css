@@ -3,3 +3,24 @@
 .bar_wrap { display: flex; height: 100%; align-items: center; position: absolute; top: 0; left: 0; z-index: 3; }
 
 
+.help_btn { position: absolute; bottom: 24px; right: 24px; z-index: 1; }
+.help_btn i { font-size: 40px; color: #fff; }
+
+
+.instruction_wrap { display: none; align-items: center; justify-content: center; position: absolute; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 999; background-color: #00000080; }
+.instruction_wrap.open { display: flex; }
+
+
+.instruction_wrap .instruction_close_btn { top: 24px; right: 24px; position: absolute; }
+.instruction_wrap .instruction_close_btn i { color: #fff; font-size: 32px; }
+
+
+.instruction_wrap .instruction_side_wrap { width: 100%; max-width: calc(100% - 160px); max-height: calc(100% - 160px); }
+
+.instruction_slide_wrap { width: 100%; height: 100%; }
+.instruction_slide_wrap img { width: 100%; height: 100%; }
+
+
+
+
+
