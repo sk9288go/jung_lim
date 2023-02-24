@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import Link from 'next/link';
 
-import styles from "../project/ProjectBar.module.css";
 import classNames from 'classnames';
+import styles from "../project/ProjectBar.module.css";
 
-import Image from 'next/image'
 
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 const ProjectBar = () => {
 	const router = useRouter()
 
-	const [bar_close, setBar_close] = useState(false)
+	const [bar_close, setBar_close] = useState(true)
 
 	return(
 		<div className={classNames({[styles.ProjectBar_wrap]: true, [styles.close]: bar_close})}>

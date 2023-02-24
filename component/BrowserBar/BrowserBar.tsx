@@ -1,26 +1,24 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Checkbox, Col, Row } from 'antd';
+import { Checkbox, Col } from 'antd';
 import type { CheckboxValueType } from 'antd/es/checkbox/Group';
+import { useEffect, useRef, useState } from 'react';
 
-import Link from 'next/link';
 
-import styles from "../BrowserBar/BrowserBar.module.css";
 import classNames from 'classnames';
+import styles from "../BrowserBar/BrowserBar.module.css";
 
-import Image from 'next/image'
 
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
-import ScrollContainer from 'react-indiana-drag-scroll'
+import ScrollContainer from 'react-indiana-drag-scroll';
 
 const BrowserBar = () => {
 	const router = useRouter()
 
 	const [bar_close, setBar_close] = useState(false);
 
-	const [drawer_1 , setDrawer_1] = useState(true);
-	const [drawer_2 , setDrawer_2] = useState(true);
-	const [drawer_3 , setDrawer_3] = useState(true);
+	const [drawer_1 , setDrawer_1] = useState(false);
+	const [drawer_2 , setDrawer_2] = useState(false);
+	const [drawer_3 , setDrawer_3] = useState(false);
 
 	// ==================================== PromptText ==========================================================
 	const [PromptText, setPromptText] = useState<string>();
@@ -135,21 +133,11 @@ const BrowserBar = () => {
 													<Checkbox.Group
 														onChange={onChangeImpact}
 													>
-														<Col>
-															<Checkbox value="Monotone">Monotone</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Atmospheric">Atmospheric</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Cinematic">Cinematic</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Parametric">Parametric</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Futurism">Futurism</Checkbox>
-														</Col>
+														<Col><Checkbox value="Monotone">Monotone</Checkbox>	</Col>
+														<Col><Checkbox value="Atmospheric">Atmospheric</Checkbox></Col>
+														<Col><Checkbox value="Cinematic">Cinematic</Checkbox></Col>
+														<Col><Checkbox value="Parametric">Parametric</Checkbox></Col>
+														<Col><Checkbox value="Futurism">Futurism</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -161,21 +149,11 @@ const BrowserBar = () => {
 													<Checkbox.Group
 														onChange={onChangeLighting}
 													>
-														<Col>
-															<Checkbox value="Lighting">Lighting</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Rim Lighting">Rim Lighting</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Back Lighting">Back Lighting</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Studio Light">Studio Light</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Blue Lighting">Blue Lighting</Checkbox>
-														</Col>
+														<Col><Checkbox value="Lighting">Lighting</Checkbox></Col>
+														<Col><Checkbox value="Rim Lighting">Rim Lighting</Checkbox></Col>
+														<Col><Checkbox value="Back Lighting">Back Lighting</Checkbox></Col>
+														<Col><Checkbox value="Studio Light">Studio Light</Checkbox></Col>
+														<Col><Checkbox value="Blue Lighting">Blue Lighting</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -187,21 +165,11 @@ const BrowserBar = () => {
 													<Checkbox.Group
 														onChange={onChangeRender}
 													>
-														<Col>
-															<Checkbox value="Retouching">Retouching</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Realistic CG">Realistic CG</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Render">Render</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="V-ray">V-ray</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Lumion">Lumion</Checkbox>
-														</Col>
+														<Col><Checkbox value="Retouching">Retouching</Checkbox></Col>
+														<Col><Checkbox value="Realistic CG">Realistic CG</Checkbox></Col>
+														<Col><Checkbox value="Render">Render</Checkbox></Col>
+														<Col><Checkbox value="V-ray">V-ray</Checkbox></Col>
+														<Col><Checkbox value="Lumion">Lumion</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -211,23 +179,12 @@ const BrowserBar = () => {
 											<div className={styles.Material_wrap}>
 												<ScrollContainer className="scroll-container">
 													<Checkbox.Group
-														onChange={onChangeArtist}
-													>
-														<Col>
-															<Checkbox value="Zaha Hadid">Zaha Hadid</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="OMA">OMA</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="MVRDV">MVRDV</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Jean Nouvel">Jean Nouvel</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="SANAA">SANAA</Checkbox>
-														</Col>
+														onChange={onChangeArtist}>
+														<Col><Checkbox value="Zaha Hadid">Zaha Hadid</Checkbox></Col>
+														<Col><Checkbox value="OMA">OMA</Checkbox></Col>
+														<Col><Checkbox value="MVRDV">MVRDV</Checkbox></Col>
+														<Col><Checkbox value="Jean Nouvel">Jean Nouvel</Checkbox></Col>
+														<Col><Checkbox value="SANAA">SANAA</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -239,21 +196,11 @@ const BrowserBar = () => {
 													<Checkbox.Group
 														onChange={onChangeDetails}
 													>
-														<Col>
-															<Checkbox value="Detailed">Detailed</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Finely Detailed">Finely Detailed</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Highly Detailed">Highly Detailed</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Detail">Detail</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Texture">Texture</Checkbox>
-														</Col>
+														<Col><Checkbox value="Detailed">Detailed</Checkbox></Col>
+														<Col><Checkbox value="Finely Detailed">Finely Detailed</Checkbox></Col>
+														<Col><Checkbox value="Highly Detailed">Highly Detailed</Checkbox></Col>
+														<Col><Checkbox value="Detail">Detail</Checkbox></Col>
+														<Col><Checkbox value="Texture">Texture</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -265,24 +212,12 @@ const BrowserBar = () => {
 													<Checkbox.Group
 														onChange={onChangeView}
 													>
-														<Col>
-															<Checkbox value="Front">Front</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Exterior">Exterior</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Interior">Interior</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Outside">Outside</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Inside">Inside</Checkbox>
-														</Col>
-														<Col>
-															<Checkbox value="Isometric">Isometric</Checkbox>
-														</Col>
+														<Col><Checkbox value="Front">Front</Checkbox></Col>
+														<Col><Checkbox value="Exterior">Exterior</Checkbox></Col>
+														<Col><Checkbox value="Interior">Interior</Checkbox></Col>
+														<Col><Checkbox value="Outside">Outside</Checkbox></Col>
+														<Col><Checkbox value="Inside">Inside</Checkbox></Col>
+														<Col><Checkbox value="Isometric">Isometric</Checkbox></Col>
 													</Checkbox.Group>
 												</ScrollContainer>
 												<i className='xi-arrows-h'></i>
@@ -291,7 +226,7 @@ const BrowserBar = () => {
 											<textarea name="" id="" value={itemsText} onChange={(e)=>{setItemsText(e.target.value)}} ></textarea>
 
 											<div className={styles.Pre_set_Check_btn_wrap}>
-												<button className={styles.Pre_set_Check_btn} onClick={()=>{setPre_set_box_wrap_open(false)}}>OK</button>
+												<button className={styles.Pre_set_Check_btn} onClick={()=>{setPre_set_box_wrap_open(false),setPromptText(PromptText + itemsText);}}>OK</button>
 											</div>
 										</div>
 									</div>
